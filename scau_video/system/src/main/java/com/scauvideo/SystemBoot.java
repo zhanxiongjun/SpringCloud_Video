@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class SystemBoot {
 
     private static final Logger log = LoggerFactory.getLogger(SystemBoot.class);
