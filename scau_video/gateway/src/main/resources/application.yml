@@ -1,8 +1,15 @@
+server:
+  port: 9001
 spring:
   application:
     name: gateway
-server:
-  port: 9001
+  cloud:
+    gateway:
+      routes:
+        - id: gateway_01
+          uri: http://localhost:8881
+          predicates:
+            - Path=/system/test
 eureka:
   client:
     service-url:

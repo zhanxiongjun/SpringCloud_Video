@@ -1,6 +1,7 @@
 spring:
   application:
     name: system
+
 server:
   port: 8881
 eureka:
